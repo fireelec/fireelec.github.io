@@ -3,7 +3,7 @@
     <extension point="xbmc.addon.repository" name="fireelec Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/fireelec/fireelec.github.io/main/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/fireelec/fireelec.github.io/mmain/addons.xml.md5</checksum>
+            <checksum>https://raw.githubusercontent.com/fireelec/fireelec.github.io/main/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/fireelec/fireelec.github.io/main/</datadir>
         </dir>
     </extension>
