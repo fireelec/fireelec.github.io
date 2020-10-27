@@ -7,13 +7,13 @@
         <import addon="script.module.six" />
         <import addon="script.kodi.android.update" optional="true" version="1.1.7" />
     </requires>
-    
+
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>executable</provides>
     </extension>
-    
+
     <extension point="xbmc.service" library="startup.py" start="startup" />
-    
+
     <extension point="xbmc.addon.metadata">
         <summary lang="en">[COLOR limegreen]fireelec[/COLOR]Wizard</summary>
         <description lang="en">[COLOR limegreen]fireelec[/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build updates.</description>
@@ -21,5 +21,23 @@
     </extension>
 </addon>
 
-
+<addon id="repository.fireelec" name="fireelec repo" version="v.1.0.0" provider-name="fireelec">
+    <extension point="xbmc.addon.repository" name="fireelec Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/fireelec/fireelec.github.io/main/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/fireelec/fireelec.github.io/main/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/fireelec/fireelec.github.io/main/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>fireelecrepo</summary>
+        <description>Fire elec repo for Wizard Builds ana Addons</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
 </addons>
